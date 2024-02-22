@@ -88,7 +88,7 @@ route.put("/replace/:name", async (req, res) => {
       req.body
     );
     await replaceTodo.save();
-    res.send({ message: "replace" });
+    res.send({ message: "replaced" });
   } catch (error) {
     console.log(error);
   }
